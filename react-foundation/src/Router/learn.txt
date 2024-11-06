@@ -1,0 +1,46 @@
+
+
+ React Router DOM ইনস্টল 
+    npm install react-router-dom
+
+
+অ্যাপ্লিকেশন ফাইলগুলোতে BrowserRouter, Route, এবং অন্যান্য কম্পোনেন্ট
+    import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+
+Route, Switch, এবং Link কম্পোনেন্ট
+    Route কম্পোনেন্ট:
+        এটি নির্দিষ্ট URL-এর সাথে একটি নির্দিষ্ট কম্পোনেন্ট রেন্ডার করার জন্য ব্যবহৃত হয়।
+
+        Route কম্পোনেন্ট path এবং component প্রপস নিয়ে কাজ করে।
+
+        এটি ব্যবহারকারীকে নির্দিষ্ট পৃষ্ঠায় নেভিগেট করার অনুমতি দেয়।
+
+    <Route path="/contact" component={Contact} />
+
+
+    Link কম্পোনেন্ট:
+        এটি অ্যাঙ্কর ট্যাগের মত কাজ করে, কিন্তু পুরো পৃষ্ঠাটি রিফ্রেশ না করেই নেভিগেশন পরিচালনা করে।
+
+        to প্রপস দিয়ে আপনি গন্তব্য URL নির্ধারণ করেন।
+
+        সিঙ্গেল-পেজ অ্যাপ্লিকেশন হিসেবে দ্রুত এবং স্মুথ নেভিগেশনের জন্য।
+
+      <Link to="/">Home</Link>
+
+
+-----------------------------------|
+Summary in Easy English            |
+-----------------------------------|
+    What? 
+        React Router helps you navigate between different pages in an app, like in multi-page applications.
+
+    How? 
+        By using BrowserRouter, Route, Switch, and Link.
+
+    When? 
+        When you need to show different pages based on different URLs.
+
+    Why? 
+        To make React apps more dynamic and user-friendly.
+        Using React Router, you can divide your app into multiple routes, creating a better experience for users.
